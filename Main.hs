@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings, DeriveGeneric #-}
 
--- | 
+-- |
 
 module Main where
 
@@ -9,33 +9,36 @@ import Data.Aeson
 import Data.Aeson.Parser
 import Data.Aeson.Types
 import Data.Maybe
+import Data.String.Conversions
 import qualified Data.Map as M
 import qualified Data.HashMap.Strict as HM
 import qualified Data.ByteString as B
 import qualified Data.ByteString.Lazy as L
+import qualified Data.ByteString.Char8 as C
 import qualified Data.Text as T
 import qualified Data.Text.IO as I
 import qualified Data.Text.Encoding as E
 import Control.Monad
 import GHC.Generics
-import Text.Pandoc 
+import Text.Pandoc
 import Text.Pandoc.Options
 
 data Revision = Revision
                 { diff :: Int
-                , author :: String
-                , comment :: String
-                , content :: String
+                , author :: T.Text
+                , comment :: T.Text
+                , content :: T.Text
                 } deriving (Generic, Show)
 
-toRevision :: Value -> Maybe Revision
-toRevision (Object o) = Just $ Revision { diff = (read . fromString . fjL) "diff"
-                               , author = (fromString . fjL) "author"
-                               , comment = (fromString . fjL) "comment"
-                               , content = (fromString . fjL) "content"
-                               }
+toRevision :: Value -> Revision
+toRevision (Object o) = Revision
+  { diff = (read . T.unpack . f . fjL) "diff"
+  , author = (f . fjL) "author"
+  , comment = (f . fjL) "comment"
+  , content = (f . fjL) "content"
+  }
   where fjL = fromJust . (flip HM.lookup o)
-        fromString (String s) = T.unpack s 
+        f (String s) = s
 
 instance ToJSON Revision where
   toEncoding = genericToEncoding defaultOptions
@@ -53,10 +56,11 @@ parseAndWrite i o tit= do
   hm <- readPmExportFile i
   (I.writeFile o . makeMediaWikiXML . revisionsToXML tit) hm
 
-translateHtmlToMediawiki :: String -> String
-translateHtmlToMediawiki s = case (readHtml def s) of
+translateHtmlToMediawiki :: T.Text -> T.Text
+translateHtmlToMediawiki s = case (readHtml def s') of
   Left pandocError -> error "FEEEEL i parsningen"
-  Right pandoc     -> writeMediaWiki def pandoc
+  Right pandoc     -> T.pack $ writeMediaWiki def pandoc
+  where s' = T.unpack s
 
 translateRevision :: Revision -> Revision
 translateRevision r = r { content = newContent }
@@ -76,6 +80,17 @@ revisionsToXML tit map =  "\t<page>\n" .+
   where revisions = HM.foldl'(flip ((.+) .  revisionToXML . translateRevision)) "" map
         (.+) = T.append
 
+dropSubstring :: T.Text -> T.Text -> T.Text
+dropSubstring s0 s1 = T.append (decode h) (decode $ C.drop (T.length s0) t)
+  where (h, t) = C.breakSubstring s0' s1'
+        s0' = E.encodeUtf8 s0
+        s1' = E.encodeUtf8 s1
+        decode = E.decodeUtf8
+
+dropSubstringB :: B.ByteString -> B.ByteString -> B.ByteString
+dropSubstringB s0 s1 = B.append h (C.drop (B.length s0) s1)
+  where (h, t) = B.breakSubstring s0 s1
+
 revisionToXML :: Revision -> T.Text
 revisionToXML r = "\t<revision>\n" .+
   "\t\t<timestamp>" .+ dif .+ "</timestamp>\n" .+
@@ -86,9 +101,9 @@ revisionToXML r = "\t<revision>\n" .+
   .+ "\n\t\t</text>\n" .+
   "\t</revision>\n"
   where dif = (p . show . diff) r
-        auth = (p . author) r
-        com = (p . comment) r
-        con = (p. content) r
+        auth = author r
+        com = comment r
+        con = content r
         size = (p . show . T.length) con
         p = T.pack
         (.+) = T.append
@@ -97,9 +112,8 @@ readPmExportFile :: FilePath -> IO (HM.HashMap String Revision)
 readPmExportFile f = liftM readPmExportFile' (L.readFile f)
 
 readPmExportFile' :: L.ByteString -> HM.HashMap String Revision
-readPmExportFile' t = (HM.map fromRevision . decode') t
+readPmExportFile' t = (HM.map toRevision . decode') t
    where decode' = fromJust . decode :: L.ByteString -> HM.HashMap String Value
-         fromRevision = fromJust . toRevision
 
 
 -- TEST DATA
