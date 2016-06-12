@@ -25,8 +25,8 @@ bootstrap args | length args < 2 = printHelp
                    commitRevs revs (second args)
                      where second = head . tail
 
-findRevisions :: String -> IO (HM.HashMap String Revision)
-findRevisions = readPmExportFile
+findRevisions :: String -> IO [Revision]
+findRevisions f = readPmExportFile f >>= (return . revsToList)
 
 printHelp :: IO ()
 printHelp = undefined
