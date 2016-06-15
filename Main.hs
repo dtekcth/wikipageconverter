@@ -4,9 +4,13 @@
 
 module Main where
 
-import System.IO
+import System.FilePath
 import System.Environment
+import System.Process
 import qualified Data.HashMap.Strict as HM
+import qualified Data.ByteString.Char8 as C
+import qualified Data.Text as T
+import qualified Data.Text.Encoding as E
 
 import Converter
 
