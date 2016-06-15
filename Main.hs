@@ -19,11 +19,12 @@ main = do
   bootstrap args
 
 bootstrap :: [String] -> IO ()
-bootstrap args | length args < 2 = printHelp
-               | otherwise = do
-                   revs <- findRevisions (head args)
-                   commitRevs revs (second args)
-                     where second = head . tail
+bootstrap args
+  | length args < 2 = printHelp
+  | otherwise = do
+      revs <- findRevisions (head args)
+      commitRevs revs (second args)
+        where second = head . tail
 
 findRevisions :: String -> IO [Revision]
 findRevisions f = readPmExportFile f >>= (return . revsToList)
