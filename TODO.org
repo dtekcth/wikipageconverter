@@ -1,0 +1,15 @@
+* Todo
+** Dokumentera mer
+
+** Automatisera exporten/importen
+   Limma ihop båda verktygen lite mer och sätt en konvention för hur
+   nya namnet ska vara baserat på den gamla file pathen.
+   Då kan man bara peka verktyget på converted/-mappen och så kör den sen.
+
+** Git delen i Main.hs mer pure haskell.
+   Förslag på paket man kan använda:
+   * filestore, https://hackage.haskell.org/package/filestore-0.6.2
+    Samma projekt som används i gitit!
+
+   * gitlib (verkar onödigt klurigt), https://hackage.haskell.org/package/gitlib
+    Dåligt dokumenterat :/
