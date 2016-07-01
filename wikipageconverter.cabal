@@ -2,7 +2,7 @@
 -- documentation, see http://haskell.org/cabal/users-guide/
 
 -- The name of the package.
-name:                WikiPageConverter
+name:                wikipageconverter
 
 -- The package version.  See the Haskell package versioning policy (PVP)
 -- for standards guiding when and how versions should be incremented.
@@ -48,13 +48,12 @@ extra-source-files:  ChangeLog.md
 -- Constraint on the version of Cabal needed to build this package.
 cabal-version:       >=1.10
 
-
 library
   -- Modules exported by the library.
   exposed-modules:     Data.WikiPageConverter, Data.WikiPageConverter.Revision, Data.WikiPageConverter.Git, Data.WikiPageConverter.Utils
 
   -- Modules included in this library but not exported.
-  other-modules:       Data.FileStore, Data.FileStore.DarcsXml, Data.FileStore.Generic, Data.FileStore.MercurialCommandServer, Data.FileStore.Sqlite3, Data.FileStore.Utils, Data.FileStore.Darcs, Data.FileStore.Git, Data.FileStore.Mercurial, Data.FileStore.Types, Data.FileStore.Compat.Locale, Tests
+  -- other-modules:
 
   -- LANGUAGE extensions used by modules in this package.
   other-extensions:    Rank2Types, FlexibleContexts, ScopedTypeVariables, DeriveDataTypeable, CPP, TypeSynonymInstances, FlexibleInstances, OverloadedStrings, DeriveGeneric
@@ -70,6 +69,7 @@ library
                      , text >= 1.2.2.1
                      , time >=1.6 && <1.7
                      , unordered-containers >= 0.2.7.1
+                     , filestore
 
   -- Directories containing source files.
   -- hs-source-dirs:
