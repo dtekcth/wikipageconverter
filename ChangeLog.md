@@ -1,4 +1,4 @@
-# Revision history for WikiPageConverter
+# Revision history for GititWikiImporter
 
 ## 0.1.0.0  -- 2016-07-01
 
