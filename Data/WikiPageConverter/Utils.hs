@@ -57,10 +57,5 @@ revsToList' revMap i =
 -- | Reads a file consisting of JSON encoded Revisions and returns it as
 --   a HashMap of Revision types. The keys are string representations of
 --   numbers starting at 0.
-readExportJSONFile :: FilePath -> IO (HashMap String Revision)
-readExportJSONFile f = liftM readExportFile' (readFile f)
-
-readExportFile' :: ByteString -> HashMap String Revision
-readExportFile' = fmap fromRevision . fromDecode
-   where fromDecode = fromJust . decode :: ByteString -> HashMap String Value
-         fromRevision = fromJust . toRevision
+readExportJSONFile :: FilePath -> IO (Maybe (HashMap String Revision))
+readExportJSONFile f = liftM decode (readFile f)
