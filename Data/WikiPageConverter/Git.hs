@@ -14,7 +14,7 @@
 module Data.WikiPageConverter.Git ( commitRevs, commitRev ) where
 
 import Prelude hiding ( length )
-import System.FilePath ( takeDirectory )
+import System.FilePath ( takeDirectory, takeFileName )
 import System.IO.Error ( catchIOError, ioError )
 import Control.Exception ( throwIO, try )
 import Data.FileStore
@@ -53,7 +53,7 @@ commitRev rev path =
 
       date' = (posixSecondsToUTCTime . toEnum . R.diff) rev
 
-  in saveWithDate repo path author date' (unpack desc) (encodeContent rev)
+  in saveWithDate repo (takeFileName path) author date' (unpack desc) (encodeContent rev)
 
   where author = mkChalmersStudent ((unpack . R.author) rev)
         mkChalmersStudent "" = mkChalmersStudent "d2016Unknown"
