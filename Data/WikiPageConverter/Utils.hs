@@ -15,10 +15,9 @@ module Data.WikiPageConverter.Utils where
 import Control.Monad ( liftM )
 
 import Prelude hiding ( map, lookup, readFile )
-import Data.Aeson ( decode, Value )
-import Data.ByteString.Lazy ( ByteString, readFile )
-import Data.HashMap.Strict ( HashMap, lookup )
-import Data.Maybe ( fromJust )
+import Data.Aeson ( decode )
+import Data.ByteString.Lazy ( readFile )
+import Data.HashMap.Strict ( HashMap, lookup, empty )
 import Data.Text ( pack, unpack, Text )
 import Text.Pandoc ( readHtml, def, writeMarkdown )
 
@@ -27,7 +26,15 @@ import Data.WikiPageConverter.Revision
 -- | Reads an exported pmwiki page that is encoded in JSON and parses it
 --   a list of Revisions, ordered chronologically.
 findRevisions :: String -> IO [Revision]
-findRevisions f = liftM revsToList (readExportJSONFile f)
+findRevisions f = let
+  toList :: Maybe (HashMap String Revision) -> [Revision]
+  toList = revsToList . justOrEmpty
+
+  justOrEmpty :: Maybe (HashMap k v) -> HashMap k v
+  justOrEmpty Nothing  = empty
+  justOrEmpty (Just m) = m
+
+  in liftM toList (readExportJSONFile f)
 
 -- | Translates the content of a Revision from HTML to Markdown
 translateRevision :: Revision -> Revision
