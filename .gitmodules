@@ -1,3 +1,0 @@
-[submodule "filestore"]
-	path = filestore
-	url = https://github.com/dtekcth/filestore
