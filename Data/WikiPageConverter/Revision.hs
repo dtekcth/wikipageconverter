@@ -24,7 +24,7 @@ import GHC.Generics
 
 -- | Revision type. Represents a Page revision in a wiki
 data Revision = Revision
-  { diff    :: Int
+  { diff    :: Integer
   , author  :: Text
   , comment :: Text
   , content :: Text
