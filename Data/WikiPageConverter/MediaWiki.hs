@@ -1,5 +1,14 @@
 {-# LANGUAGE OverloadedStrings #-}
--- | Module for generating MediaWiki pages from the JSON representation
+{- |
+   Module           : Data.WikiPageConverter.MediaWiki
+   Copyright        : Copyright (C) 2017 Jacob Jonsson
+   License          : BSD 3
+
+   Maintainer       : Jacob Jonsson <jassob@dtek.se>
+   Stability        : alpha
+
+   A module for exporting wiki pages to MediaWiki xml format.
+-}
 
 module Data.WikiPageConverter.MediaWiki where
 
