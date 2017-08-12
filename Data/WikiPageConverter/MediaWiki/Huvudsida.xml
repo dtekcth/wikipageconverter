@@ -1,0 +1,221 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="sv">
+  <siteinfo>
+    <sitename>Datateknologsektionens wiki</sitename>
+    <dbname>mediawiki</dbname>
+    <base>https://mediawiki.dtek.se/Huvudsida</base>
+    <generator>MediaWiki 1.29.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Diskussion</namespace>
+      <namespace key="2" case="first-letter">Användare</namespace>
+      <namespace key="3" case="first-letter">Användardiskussion</namespace>
+      <namespace key="4" case="first-letter">Datateknologsektionens wiki</namespace>
+      <namespace key="5" case="first-letter">Datateknologsektionens wikidiskussion</namespace>
+      <namespace key="6" case="first-letter">Fil</namespace>
+      <namespace key="7" case="first-letter">Fildiskussion</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki-diskussion</namespace>
+      <namespace key="10" case="first-letter">Mall</namespace>
+      <namespace key="11" case="first-letter">Malldiskussion</namespace>
+      <namespace key="12" case="first-letter">Hjälp</namespace>
+      <namespace key="13" case="first-letter">Hjälpdiskussion</namespace>
+      <namespace key="14" case="first-letter">Kategori</namespace>
+      <namespace key="15" case="first-letter">Kategoridiskussion</namespace>
+      <namespace key="3000" case="first-letter">Sektionen</namespace>
+      <namespace key="3001" case="first-letter">Sektionen diskussion</namespace>
+      <namespace key="3100" case="first-letter">Arkiverad användare</namespace>
+      <namespace key="3101" case="first-letter">Arkiverad användardiskussion</namespace>
+      <namespace key="4000" case="first-letter">Styret</namespace>
+      <namespace key="4001" case="first-letter">Styretdiskussion</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Huvudsida</title>
+    <ns>0</ns>
+    <id>1</id>
+    <revision>
+      <id>1</id>
+      <timestamp>2017-03-08T18:33:32Z</timestamp>
+      <contributor>
+        <username>MediaWiki default</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="763">&lt;strong&gt;MediaWiki har installerats utan problem.&lt;/strong&gt;
+
+Information om hur wiki-programvaran används finns i [https://meta.wikimedia.org/wiki/Help:Contents användarguiden].
+
+== Att komma igång ==
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Configuration_settings Lista över konfigurationsinställningar]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:FAQ MediaWiki FAQ]
+* [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce E-postlista för nya versioner av MediaWiki]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Localisation#Translation_resources Lokalisera MediaWiki för ditt språk]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Combating_spam Läs om hur du bekämpar spam på din wiki]</text>
+      <sha1>e5iv2v6m5ckdqg6735ac18twnhopokd</sha1>
+    </revision>
+    <revision>
+      <id>3</id>
+      <parentid>1</parentid>
+      <timestamp>2017-05-11T09:50:55Z</timestamp>
+      <contributor>
+        <username>Heemil</username>
+        <id>2</id>
+      </contributor>
+      <comment>Mindre men viktig ändring.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="699">We got to fix this MediaWiki soon! I want it naauuuuu!
+
+Massa bös nedanför hur man kommer igång med MediaWiki!
+
+== Att komma igång ==
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Configuration_settings Lista över konfigurationsinställningar]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:FAQ MediaWiki FAQ]
+* [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce E-postlista för nya versioner av MediaWiki]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Localisation#Translation_resources Lokalisera MediaWiki för ditt språk]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Combating_spam Läs om hur du bekämpar spam på din wiki]</text>
+      <sha1>0wr9mr62xoy3xsebp8cc5drss9dw5ou</sha1>
+    </revision>
+    <revision>
+      <id>4</id>
+      <parentid>3</parentid>
+      <timestamp>2017-05-11T19:05:57Z</timestamp>
+      <contributor>
+        <username>Vioskar</username>
+        <id>3</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="902">We got to fix this MediaWiki soon! I want it naauuuuu!
+
+Massa bös nedanför hur man kommer igång med MediaWiki!
+
+Vare du som tog bort mina fina fcgi parametrar och location blocks, emil?. gillade du dem ej? :&lt; [[Användare:Vioskar|Vioskar]] ([[Användardiskussion:Vioskar|diskussion]]) 11 maj 2017 kl. 21.05 (CEST)
+
+== Att komma igång ==
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Configuration_settings Lista över konfigurationsinställningar]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:FAQ MediaWiki FAQ]
+* [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce E-postlista för nya versioner av MediaWiki]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Localisation#Translation_resources Lokalisera MediaWiki för ditt språk]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Combating_spam Läs om hur du bekämpar spam på din wiki]</text>
+      <sha1>82qi6z330f1sqvmwlsny95f902l7wyk</sha1>
+    </revision>
+    <revision>
+      <id>6</id>
+      <parentid>4</parentid>
+      <timestamp>2017-08-12T17:43:31Z</timestamp>
+      <contributor>
+        <username>Jacobjo</username>
+        <id>4</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="931">We got to fix this MediaWiki soon! I want it naauuuuu!
+
+Massa bös nedanför hur man kommer igång med MediaWiki!
+
+Vare du som tog bort mina fina fcgi parametrar och location blocks, emil?. gillade du dem ej? :&lt; [[Användare:Vioskar|Vioskar]] ([[Användardiskussion:Vioskar|diskussion]]) 11 maj 2017 kl. 21.05 (CEST)
+
+Jag ändrar lite på denna!
+
+== Att komma igång ==
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Configuration_settings Lista över konfigurationsinställningar]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:FAQ MediaWiki FAQ]
+* [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce E-postlista för nya versioner av MediaWiki]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Localisation#Translation_resources Lokalisera MediaWiki för ditt språk]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Combating_spam Läs om hur du bekämpar spam på din wiki]</text>
+      <sha1>e3pqnm9v2dewpkuu9a1xl4ej38ncaza</sha1>
+    </revision>
+    <revision>
+      <id>7</id>
+      <parentid>6</parentid>
+      <timestamp>2017-08-12T17:43:44Z</timestamp>
+      <contributor>
+        <username>Jacobjo</username>
+        <id>4</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="954">We got to fix this MediaWiki soon! I want it naauuuuu!
+
+Massa bös nedanför hur man kommer igång med MediaWiki!
+
+Vare du som tog bort mina fina fcgi parametrar och location blocks, emil?. gillade du dem ej? :&lt; [[Användare:Vioskar|Vioskar]] ([[Användardiskussion:Vioskar|diskussion]]) 11 maj 2017 kl. 21.05 (CEST)
+
+Jag ändrar lite på denna!
+Jag ändrar lite till!
+
+== Att komma igång ==
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Configuration_settings Lista över konfigurationsinställningar]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:FAQ MediaWiki FAQ]
+* [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce E-postlista för nya versioner av MediaWiki]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Localisation#Translation_resources Lokalisera MediaWiki för ditt språk]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Combating_spam Läs om hur du bekämpar spam på din wiki]</text>
+      <sha1>i4pc9557fqygliyml7k0v8ifkqtj5in</sha1>
+    </revision>
+    <revision>
+      <id>8</id>
+      <parentid>7</parentid>
+      <timestamp>2017-08-12T17:44:24Z</timestamp>
+      <contributor>
+        <username>Jacobjo</username>
+        <id>4</id>
+      </contributor>
+      <comment>Massa götta</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="10054">We got to fix this MediaWiki soon! I want it naauuuuu!
+
+Massa bös nedanför hur man kommer igång med MediaWiki!
+
+Vare du som tog bort mina fina fcgi parametrar och location blocks, emil?. gillade du dem ej? :&lt; [[Användare:Vioskar|Vioskar]] ([[Användardiskussion:Vioskar|diskussion]]) 11 maj 2017 kl. 21.05 (CEST)
+
+Jag ändrar lite på denna!
+Jag ändrar lite till!
+
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus malesuada euismod. Vestibulum dapibus ut sem id pulvinar. Proin sit amet egestas quam. Pellentesque sit amet lectus tempus, fermentum orci consectetur, aliquam nisi. Nullam nisi tellus, tincidunt at enim a, viverra luctus dui. Cras porta pharetra placerat. Vestibulum eu nibh laoreet, aliquam risus vitae, lobortis ex. Vivamus sit amet sagittis enim. Proin ante mauris, volutpat vitae nibh nec, pulvinar lacinia tortor. Sed eget eros at dui aliquet auctor. In dictum turpis vitae sapien pulvinar, nec faucibus elit cursus. Nulla id congue sem, sed fermentum nibh. Vivamus vulputate enim et velit blandit, nec accumsan dui viverra. Duis luctus egestas turpis, lobortis tincidunt dui tristique eu.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vestibulum massa nibh, id lobortis felis semper non. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer justo lectus, rhoncus id placerat eget, placerat a urna. Fusce nisl ante, lobortis quis mauris quis, eleifend vestibulum massa. Fusce finibus id enim a luctus. Integer laoreet eros lectus, eu varius nisi pharetra convallis. Cras semper neque ligula, eu porttitor mi egestas et. Nulla pulvinar eu mi vitae pellentesque. Pellentesque blandit metus tellus, at bibendum orci mattis sit amet. Aenean iaculis arcu non dolor fringilla condimentum. Donec ullamcorper mauris sit amet augue pharetra dapibus. Aliquam erat volutpat. Nulla id interdum massa, eget suscipit nisl. Morbi at metus sit amet neque finibus vulputate.
+
+Proin id lectus nec mauris sodales malesuada sed vel orci. Donec eleifend nibh sit amet quam congue, vitae congue nisl congue. Etiam in turpis sit amet libero tincidunt pharetra. Duis bibendum lacus eget faucibus sagittis. Suspendisse eu lectus rhoncus, efficitur dui non, tincidunt elit. Vestibulum vehicula fringilla erat vitae ullamcorper. Integer eu mattis purus. Vestibulum commodo pretium odio, in convallis erat posuere tempus. Suspendisse tincidunt vehicula ultrices. Vivamus laoreet, nunc vel mollis mattis, nisl metus vestibulum lorem, et faucibus mi turpis vitae mi. Donec ac fringilla tortor. Etiam scelerisque justo vel mi consectetur ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Praesent vel odio neque. Nulla semper mi mattis eros lacinia elementum. Praesent pretium congue dui lacinia facilisis. In vel eleifend nulla. Integer ut nisi eget ligula lacinia imperdiet. Aliquam erat volutpat. Donec eget massa eu ligula ullamcorper placerat a dictum odio.
+
+Integer et aliquet nisi. Sed cursus maximus suscipit. Etiam ligula nunc, condimentum vel lobortis ac, vehicula et nibh. Donec non ipsum leo. Sed tincidunt, massa eget condimentum tempus, lacus est euismod tortor, nec malesuada ligula magna vitae dui. Integer at felis sed diam congue viverra sit amet quis quam. Quisque tincidunt ligula vel odio interdum luctus. Maecenas at libero quis nulla bibendum suscipit sit amet at nunc. Praesent enim ante, viverra ut lacinia eu, fermentum sed tellus. Sed accumsan lacus neque, at mattis ante luctus euismod. Sed congue vitae diam at convallis.
+
+Ut viverra mollis eros, eget malesuada nisl finibus id. Donec imperdiet nec ante non vehicula. Vestibulum a neque sodales, condimentum ante sit amet, hendrerit quam. Curabitur volutpat tristique ante sed congue. In hendrerit ex in viverra euismod. Phasellus ut varius eros, et dictum leo. Praesent ipsum nulla, posuere a ornare et, elementum nec ex. Aliquam at urna pretium, ullamcorper nisi sit amet, porta enim. Mauris quis viverra risus. Nullam a cursus lorem.
+
+Duis suscipit, felis eget vestibulum luctus, augue risus vehicula ligula, eu vestibulum nibh massa et neque. Maecenas ipsum odio, venenatis vel ultrices vitae, condimentum tempor dolor. In ut maximus tellus. Vestibulum gravida mauris vel sem mattis tincidunt. Etiam ac odio porta, blandit sapien quis, semper ligula. Nulla tristique egestas turpis sit amet commodo. Mauris rutrum quam eu mollis pharetra. Praesent vel commodo ante. Nullam efficitur venenatis mi luctus rhoncus. Morbi elementum lectus id tortor laoreet, a interdum ante euismod. Suspendisse pretium nulla a erat vulputate auctor sed non urna. Aliquam erat volutpat. Nunc ac orci eu mi commodo euismod.
+
+Sed dictum mauris sed est malesuada, non porttitor erat ultricies. Nullam egestas, neque non egestas ultrices, nunc ex euismod erat, ac sollicitudin augue urna ut nibh. Donec quis tortor ut nibh pulvinar hendrerit in in libero. Integer feugiat, turpis ut volutpat egestas, sapien felis volutpat sem, eu ullamcorper urna risus eget sem. Aenean hendrerit, orci ac interdum maximus, metus sapien varius turpis, malesuada eleifend elit orci id erat. Etiam hendrerit interdum tristique. In quis nibh vitae dolor accumsan iaculis. Aliquam ultricies et eros vel eleifend. Ut quis diam non lectus porttitor ullamcorper vel eu mi. Donec pretium dui ut magna euismod elementum. Ut id volutpat velit. Aenean volutpat scelerisque pretium. Etiam hendrerit nec augue vitae eleifend. Sed pretium felis nisl, sit amet venenatis massa congue ac.
+
+Donec a metus ornare, elementum dolor ac, faucibus sem. Fusce vulputate nulla ac mauris molestie, vitae vulputate arcu iaculis. Etiam elementum sagittis risus, sit amet euismod orci. Nullam nec urna enim. Nulla ullamcorper tempus imperdiet. Suspendisse a congue mauris. Nulla nunc eros, mattis quis ipsum ac, luctus lacinia magna. Phasellus sit amet sodales massa, nec porttitor neque.
+
+Praesent volutpat convallis lectus, aliquet pulvinar massa maximus quis. Curabitur pellentesque lacus id dolor ullamcorper, ullamcorper tincidunt neque sodales. Integer tempus nisl rutrum tincidunt finibus. Aliquam at ante dui. Aliquam erat volutpat. Aenean justo ligula, consequat et tincidunt pulvinar, pretium consequat lacus. In lacinia enim sit amet risus scelerisque, vel lobortis tortor molestie. Ut turpis leo, hendrerit sit amet porta sed, vehicula in magna. Mauris posuere purus ac tristique semper. Ut dignissim, diam ut rhoncus vestibulum, ligula nibh rutrum elit, ut rhoncus orci libero id nunc. Aliquam quam nisi, fermentum at orci vel, aliquet tincidunt enim. Phasellus elementum risus at lacinia vehicula. Nunc vitae velit eu odio dignissim iaculis. Morbi at ligula lectus.
+
+Morbi mattis, turpis ut semper euismod, sem nunc pulvinar orci, sit amet ultrices est leo vitae eros. Nullam lorem nibh, pellentesque eu ultrices ac, faucibus id augue. Mauris ligula turpis, suscipit ac pulvinar porttitor, lobortis nec metus. Fusce orci mi, cursus at purus vitae, dictum varius massa. Etiam tempor nibh a magna consectetur, id ornare metus dictum. Cras egestas dui libero, eget porttitor arcu laoreet vel. Nullam mollis libero sit amet sapien finibus, eget tristique nunc efficitur.
+
+In in aliquet ante. Praesent accumsan pellentesque ultrices. Morbi finibus aliquet interdum. Pellentesque porta tortor facilisis, interdum erat at, semper urna. Sed eu nisl a turpis bibendum rhoncus. Nam pretium enim id posuere tempor. Morbi ut justo elit.
+
+Mauris tempus tellus neque, sit amet pulvinar odio blandit nec. Morbi scelerisque velit libero, nec fringilla enim facilisis non. Nullam in justo imperdiet, malesuada nulla ut, lobortis diam. Maecenas vel turpis auctor, sagittis erat ac, suscipit nulla. Pellentesque iaculis sagittis nulla ut fermentum. Nunc diam arcu, blandit bibendum ipsum a, luctus blandit nisl. Aliquam malesuada pellentesque turpis, in ullamcorper magna fermentum non. Vivamus fringilla erat vel ante efficitur porta. Mauris eleifend tellus ut mauris condimentum, lacinia pharetra elit congue. Aliquam venenatis, enim ut pretium aliquam, felis metus hendrerit magna, sit amet condimentum lorem arcu non odio. Fusce ultrices ultricies lacus vitae accumsan. Sed erat felis, eleifend non aliquet semper, iaculis vitae ipsum. Nam feugiat neque lacus, at eleifend ex porta non. Integer viverra, enim nec dapibus congue, purus dui convallis nunc, quis tincidunt lacus dui id mi.
+
+Duis libero eros, rutrum in nunc at, dapibus hendrerit erat. Ut malesuada risus est, non pharetra diam condimentum a. Nullam diam augue, sollicitudin vel magna eu, suscipit volutpat turpis. Morbi dapibus tristique varius. Cras fermentum, tortor non lacinia commodo, tortor ipsum hendrerit dui, ac venenatis metus mi a ex. Ut eu purus ac odio scelerisque dictum. Morbi id lacus et dui vulputate ornare eu accumsan lectus. Phasellus molestie massa diam, nec facilisis leo bibendum ut. Donec id erat nec ipsum ornare iaculis ut eu sem. Pellentesque auctor egestas sem a pellentesque. Morbi dictum luctus ipsum vel viverra. Duis ornare vel mi et laoreet. Morbi sagittis augue eu imperdiet efficitur. Cras faucibus porta tortor in maximus.
+
+Phasellus sapien leo, lobortis sed porta nec, rutrum non sem. Vestibulum mollis nisi nec nunc ullamcorper, a bibendum purus tempor. Nunc varius ut urna eget rhoncus. Sed in congue ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae lorem eu mauris mollis sagittis id eget magna. In ut nulla quam. 
+
+== Att komma igång ==
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Configuration_settings Lista över konfigurationsinställningar]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:FAQ MediaWiki FAQ]
+* [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce E-postlista för nya versioner av MediaWiki]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Localisation#Translation_resources Lokalisera MediaWiki för ditt språk]
+* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Combating_spam Läs om hur du bekämpar spam på din wiki]</text>
+      <sha1>izh31c71gtyjx5fgd0grdwkqwakfut6</sha1>
+    </revision>
+  </page>
+</mediawiki>
