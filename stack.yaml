@@ -39,10 +39,11 @@ packages:
 - location:
     git: git@github.com:dtekcth/filestore.git
     commit: a847cdcfba7540d80f6e0b4bbedbe60d24dcaa05
+  extra-dep: true
 - location: .
 # Dependency packages to be pulled from upstream that are not in the resolver
 # (e.g., acme-missiles-0.3)
-extra-deps: [datetime-0.3.1]
+extra-deps: []
 
 # Override default flag values for local packages and extra-deps
 flags: {}

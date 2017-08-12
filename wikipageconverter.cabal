@@ -65,11 +65,12 @@ library
                      , containers >=0.5 && <0.6
                      , directory >=1.2 && <1.3
                      , filepath >=1.4 && <1.5
+                     , filestore
                      , pandoc >= 1.17.1
                      , text >= 1.2.2.1
-                     , datetime
                      , unordered-containers >= 0.2.7.1
-                     , filestore
+                     , xmlgen >= 0.6.2.1
+                     , thyme
 
   -- Directories containing source files.
   -- hs-source-dirs:

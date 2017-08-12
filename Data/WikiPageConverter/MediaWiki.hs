@@ -12,33 +12,41 @@
 
 module Data.WikiPageConverter.MediaWiki where
 
-import Data.ByteString (ByteString)
-import Data.ByteString.Char8 (pack)
-import Data.DateTime (fromSeconds)
-import Data.Text.Encoding (encodeUtf8)
-import Data.Monoid ((<>))
-import Data.List (intersperse)
+import qualified Data.Text as T
+import           Data.Monoid ((<>))
+import           Text.XML.Generator
 
-import Data.WikiPageConverter.Utils
-import Data.WikiPageConverter.Revision (Revision(..))
+import           Data.WikiPageConverter.Utils
+import           Data.WikiPageConverter.Revision (Revision(..))
 import qualified Data.WikiPageConverter.Revision as R
+import qualified Data.WikiPageConverter.MediaWiki.Types as MWT
 
-withXMLBase :: ([Revision] -> ByteString) -> String -> ([Revision] -> ByteString)
-withXMLBase f title revs = mconcat $ intersperse ("\n")
-  [ "<mediawiki xml:lang=\"sv\">"
-  , "<page>"
-  , "<title>" <> pack title <> "</title>"
-  , f revs
-  , "</page>"
-  , "</mediawiki>"
-  ]
+-- | Creates the <page> node and its data.
+createPageXml :: ((Revision, Int) -> Xml Elem)
+              -- ^ Revision to XML element function
+              -> T.Text
+              -- ^ Title
+              -> MWT.Namespace
+              -- ^ Namespace
+              -> [Revision]
+              -- ^ Revisions
+              ->  Xml Elem
+createPageXml f title ns revs =
+  xelem "page" . xelems $
+  [ xelem "title" title
+  , xelem "ns" (pshow . MWT.key $ ns)
+  ] <> zipWith (curry f) revs [1..]
 
-revToXML :: Revision -> ByteString
-revToXML (Revision time user com content) = mconcat $ intersperse ("\n")
-  [ "<revision>"
-  , "<timestamp>" <> (pack . show . fromSeconds) time <> "</timestamp>"
-  , "<contributor><username>" <> encodeUtf8 user <> "</username></contributor>"
-  , "<comment>" <> encodeUtf8 com <> "</comment>"
-  , "<text>" <> encodeUtf8 content <> "</text>"
-  , "</revision>"
-  ]
+mediaWikiDocInfo :: Xml Elem
+mediaWikiDocInfo = xelemQ exportNs "mediawiki" $
+  xattrs [ xattrQ xmlSchemaNs "schemaLocation" schemaLoc
+         , xattr "version" "0.10" ]
+
+  where exportNs    = namespace "" "http://www.mediawiki.org/xml/export-0.10"
+        xmlSchemaNs = namespace "xsi" "http://www.w3.org/2001/XMLSchema-instance"
+        schemaLoc   = "http://mediawiki.org/xml/export-0.10/ http://mediawiki.org/xml/export-0.10.xsd"
+
+
+-- Text alias
+pshow :: Show a => a -> T.Text
+pshow = T.pack . show
