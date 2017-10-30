@@ -18,7 +18,7 @@ import System.FilePath ( takeDirectory, takeFileName )
 import System.IO.Error ( catchIOError, ioError )
 import Control.Exception ( throwIO, try )
 import Data.FileStore
-import Data.DateTime ( fromSeconds )
+import Data.Time.Clock.POSIX ( posixSecondsToUTCTime )
 import Data.ByteString.Lazy ( toStrict, fromStrict )
 import Data.Text ( append, pack, unpack, length )
 import qualified Data.Text.Encoding as E
@@ -51,7 +51,7 @@ commitRev rev path =
 
       repo = gitFileStore (takeDirectory path)
 
-      date' = (fromSeconds . R.diff) rev
+      date' = (posixSecondsToUTCTime . realToFrac . R.diff) rev
 
   in saveWithDate repo (takeFileName path) author date' (unpack desc) (encodeContent rev)
 
