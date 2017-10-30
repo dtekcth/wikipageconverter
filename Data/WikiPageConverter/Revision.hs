@@ -17,9 +17,7 @@ module Data.WikiPageConverter.Revision ( Revision(..) ) where
 import Prelude hiding (lookup, readFile, map)
 import Data.Aeson
 import Data.Aeson.Types
-import Data.Maybe ( fromJust )
-import Data.HashMap.Strict ( lookup )
-import Data.Text ( Text, unpack )
+import Data.Text ( Text )
 import GHC.Generics
 
 -- | Revision type. Represents a Page revision in a wiki

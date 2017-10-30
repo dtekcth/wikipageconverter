@@ -50,7 +50,10 @@ cabal-version:       >=1.10
 
 library
   -- Modules exported by the library.
-  exposed-modules:     Data.WikiPageConverter, Data.WikiPageConverter.Revision, Data.WikiPageConverter.Git, Data.WikiPageConverter.Utils
+  exposed-modules:     Data.WikiPageConverter
+                     , Data.WikiPageConverter.Revision
+                     , Data.WikiPageConverter.Utils
+
 
   -- Modules included in this library but not exported.
   -- other-modules:
